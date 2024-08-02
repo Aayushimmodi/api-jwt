@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<body>
+    <%-include('header');-%>
+    <h1>Registration Form</h1>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Name : </td>
+                <td><input  type="text" name="user_name"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input  type="email" name="user_email"></td>
+            </tr>
+            <tr>
+                <td>Mobile : </td>
+                <td><input  type="number" name="user_mobile"></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input  type="password" name="user_password"></td>
+            </tr>
+            <tr>
+                <td><input  type="submit"></td>
+                <td><input  type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

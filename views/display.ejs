@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <%-include('header');-%><br/>
+    <%=mydata.length%>Records Found
+    <table border="1">
+        <tr>
+                <th>No</th>
+                <th>Name </th>
+                <th>Email </th>
+                <th>Password </th>
+        </tr>
+        <%for(var i=0; i<mydata.length; i++){%>
+        <tr>
+            <th><%=i+1%></th>
+            <th><%=mydata[i].user_name%> </th>
+            <th><%=mydata[i].user_email%> </th>
+            <th><%=mydata[i].user_password%> </th>
+        
+    </tr>
+    <%}%>
+    </table>
+</body>
+</html>
